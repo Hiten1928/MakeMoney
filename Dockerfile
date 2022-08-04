@@ -3,7 +3,8 @@ FROM python:latest
 RUN pip install --upgrade pip && \
     pip install pandas && \
     pip install pandas_datareader && \
-    pip install datetime
+    pip install datetime && \
+    pip install yfinance
 
 #Labels as key value pair
 LABEL Maintainer="hiten3008"
@@ -23,5 +24,5 @@ COPY data ./
 #CMD instruction should be used to run the software
 #contained by your image, along with any arguments.
 
-CMD [ "python3", "./app/money.py", "tail -f /dev/null"]
+CMD [ "python3", "money.py", "tail -f /dev/null"]
 # CMD tail -f /dev/null

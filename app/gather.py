@@ -5,7 +5,7 @@ import yfinance as yf
 from pandas_datareader import data, wb
 import datetime
 
-xls = pd.read_csv("data/June2022.csv")
+xls = pd.read_csv("August2022.csv")
 
 # companyList = xls[((xls['Symbol']) & (str(xls['Div Yield'])) &
 #                    (str(xls['Annualized'])))]
