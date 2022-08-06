@@ -17,6 +17,11 @@ class MaximizeProfit:
             stockCountMap: dict = {}
             stockCountMap["numOfStock"] = maxStockPrice / stock["price"]
             stockCountMap["tickr"] = stock["tickr"]
+            stockCountMap["totalInvestmentPrice"] = stock[
+                "price"] * stockCountMap["numOfStock"]
+            stockCountMap["price/stock"] = stock["price"]
+            stockCountMap["totalDividend"] = stock["div_cash"] * stockCountMap[
+                "numOfStock"]
             stockStandardPriceList.append(stockCountMap)
         return stockStandardPriceList
 
