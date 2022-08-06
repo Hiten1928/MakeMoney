@@ -7,9 +7,6 @@ import datetime
 
 xls = pd.read_csv("August2022.csv")
 
-# companyList = xls[((xls['Symbol']) & (str(xls['Div Yield'])) &
-#                    (str(xls['Annualized'])))]
-
 
 class CollectData():
 
