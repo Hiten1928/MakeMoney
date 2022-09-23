@@ -5,7 +5,7 @@ import yfinance as yf
 from pandas_datareader import data, wb
 import datetime
 
-xls = pd.read_csv("August2022.csv")
+xls = pd.read_csv("./data/September2022.csv")
 
 
 class CollectData():
